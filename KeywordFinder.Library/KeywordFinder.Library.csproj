@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+    <Version>0.0.1</Version>
+    <PackageId>KeywordFinder</PackageId>
+    <Company />
+    <Authors>Joseph Anglada</Authors>
+    <Description>A simple library to get keywords from a text.</Description>
+    <Copyright>(c) 2018</Copyright>
+    <PackageLicenseUrl>https://mit-license.org</PackageLicenseUrl>
+    <PackageReleaseNotes>A library to get keywords from text, and a list of stop words for English.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/fluorine/KeywordFinder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fluorine/KeywordFinder</RepositoryUrl>
+    <PackageTags>keywords, text, text processing, semantics</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>

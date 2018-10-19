@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeywordFinder.Tests", "KeywordFinder.Tests\KeywordFinder.Tests.csproj", "{A5541B4A-597E-4328-95F9-E806BC7ACD5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeywordFinder.Library", "KeywordFinder.Library\KeywordFinder.Library.csproj", "{FFC137D1-F097-443B-9B5F-44B1A50EAC92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5541B4A-597E-4328-95F9-E806BC7ACD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5541B4A-597E-4328-95F9-E806BC7ACD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5541B4A-597E-4328-95F9-E806BC7ACD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5541B4A-597E-4328-95F9-E806BC7ACD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC137D1-F097-443B-9B5F-44B1A50EAC92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC137D1-F097-443B-9B5F-44B1A50EAC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC137D1-F097-443B-9B5F-44B1A50EAC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC137D1-F097-443B-9B5F-44B1A50EAC92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E2ECFB3-CBBE-49DC-AED5-E426A5EF1A60}
+	EndGlobalSection
+EndGlobal
