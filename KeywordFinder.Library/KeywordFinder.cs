@@ -1,25 +1,21 @@
-﻿using System.Collections.Generic;
+﻿using KeywordFinder.Contracts;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace KeywordFinder
 {
-    public class KeywordFinder
+    public class KeywordFinder : IKeywordFinder
     {
-        public IEnumerable<string> StopWords { get; set; }
+        public IEnumerable<string> IgnoredWords { get; set; }
 
         public KeywordFinder()
         {
         }
 
-        public KeywordFinder(IEnumerable<string> stopWords)
+        public KeywordFinder(IEnumerable<string> ignoredWords)
         {
-            StopWords = stopWords;
-        }
-
-        public static KeywordFinder IgnoringWordsFrom(List<string> stopWords)
-        {
-            return new KeywordFinder(stopWords);
+            IgnoredWords = ignoredWords;
         }
 
         public IEnumerable<string> GetKeywordsFrom(string text)
@@ -34,7 +30,7 @@ namespace KeywordFinder
             var keywords = tokens
                 .Where(w => !string.IsNullOrWhiteSpace(w))
                 .Distinct()
-                .Except(StopWords ?? Enumerable.Empty<string>());
+                .Except(IgnoredWords ?? Enumerable.Empty<string>());
 
             return keywords;
         }
